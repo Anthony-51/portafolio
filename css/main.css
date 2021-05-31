@@ -1,0 +1,154 @@
+*{
+    font-family: cursive;
+}
+/*about-me*/
+#about-me{
+    background: url(../img/fondo.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding: 130px 0px;
+}
+#boton{
+    margin-right: 30px;
+}
+.information{
+    margin: auto;
+    color: black;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px 25px;
+    overflow: inherit;
+}
+.information h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
+/* separador */
+#separador{
+    margin-top: -100px;
+    width: 100%;
+    height: 200px;
+    border: none;
+    background-image:linear-gradient( rgba(255, 255, 255, 0),rgb(0, 0, 0,1), rgba(0, 0, 0, 0));
+    overflow: hidden;
+    position: relative;
+    /*background: linear-gradient(180deg, rgba(7, 14, 117, 0) 0%, rgb(255, 255, 255) 57%);*/
+}
+
+/*carousel*/
+.content{
+    
+}
+#carouselContainer{ 
+    height: 800px;
+    background: url("../img/fondo-carousel.jpg");
+    background-position: center;
+    margin-top: -100px;
+}
+.bgd-transparent{
+    background-color: rgba(125, 125, 125, 0.5);
+    color: black;
+    text-shadow: -1px 2px 5px rgb(250, 250, 250);
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+#carouselIndicator .carousel-indicators button{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+#carouselIndicator-sm .carousel-indicators button{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.card{
+    overflow: hidden;
+}
+.card img{
+    height: 200px;
+    transition: all ease-out 1s;
+}
+.card-body{
+    background: rgba(14, 31, 50, 0.7);
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-out 1.0s;
+    cursor: pointer;
+}
+.card:hover> img{
+    transform: scale(1.5);
+}
+
+.card:hover> .card-body{
+    opacity: 1;
+    visibility: visible;
+}
+.carousel-inner .carousel-item .row .col-sm .card{
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Separador project*/
+
+#separador-project{
+    height: 200px;
+    margin-top: -100px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(125,125,125,0),white, rgba(0, 0, 255, 0));
+    background-position: center;
+    z-index: 3;
+}
+.shadows{
+    box-shadow: -5px 5px 15px black;
+}
+
+/*separador contact*/
+
+#separador-contact{
+        margin-top: -100px;
+        width: 100%;
+        height: 200px;
+        border: none;
+        background-image:linear-gradient( rgba(255, 255, 255, 0),rgb(255, 255, 255), rgba(0, 0, 0, 0));
+        overflow: hidden;
+        position: relative;
+}
+
+#contact{
+    margin-top: -100px;
+    height: 850px;
+    padding-top: 70px !important;
+}
+
+/*Separador footer*/
+
+hr:not([size]) {
+    height: 3px;
+}
+.line{
+    margin: 0px;
+    opacity: 0.4;
+}
+
+footer{
+    margin: 0px;
+    height: 150px;
+    background: rgb(50, 55, 55);
+}
+textarea{
+}
